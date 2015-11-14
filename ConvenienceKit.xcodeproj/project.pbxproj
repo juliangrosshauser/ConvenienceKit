@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B9EA33811BF7C266004D871F /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EA33761BF7C266004D871F /* ConvenienceKit.framework */; };
 		B9EA33961BF7C326004D871F /* ConvenienceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EA33941BF7C326004D871F /* ConvenienceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9EA33EE1BF7CE04004D871F /* UIColor+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA33EC1BF7CE04004D871F /* UIColor+Name.swift */; };
+		B9EA33F11BF7CE3E004D871F /* UIColor+Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA33F01BF7CE3E004D871F /* UIColor+Hexadecimal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		B9EA33D11BF7C7B6004D871F /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		B9EA33D21BF7C7B6004D871F /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		B9EA33EC1BF7CE04004D871F /* UIColor+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Name.swift"; sourceTree = "<group>"; };
+		B9EA33F01BF7CE3E004D871F /* UIColor+Hexadecimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hexadecimal.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		B9EA33931BF7C326004D871F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				B9EA33F01BF7CE3E004D871F /* UIColor+Hexadecimal.swift */,
+				B9EA33EC1BF7CE04004D871F /* UIColor+Name.swift */,
 				B9EA33941BF7C326004D871F /* ConvenienceKit.h */,
 			);
 			path = Source;
@@ -272,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EA33F11BF7CE3E004D871F /* UIColor+Hexadecimal.swift in Sources */,
+				B9EA33EE1BF7CE04004D871F /* UIColor+Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -398,6 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliangrosshauser.ConvenienceKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -405,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
