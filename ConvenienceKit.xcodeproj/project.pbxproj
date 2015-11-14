@@ -27,6 +27,14 @@
 		B9EA33921BF7C326004D871F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9EA33941BF7C326004D871F /* ConvenienceKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvenienceKit.h; sourceTree = "<group>"; };
 		B9EA33991BF7C342004D871F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EA33C41BF7C7B6004D871F /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		B9EA33C61BF7C7B6004D871F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B9EA33C81BF7C7B6004D871F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		B9EA33CB1BF7C7B6004D871F /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		B9EA33CC1BF7C7B6004D871F /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		B9EA33D11BF7C7B6004D871F /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		B9EA33D21BF7C7B6004D871F /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			children = (
 				B9EA33901BF7C326004D871F /* ConvenienceKit */,
 				B9EA33971BF7C342004D871F /* ConvenienceKitTests */,
+				B9EA33C11BF7C7B6004D871F /* Configurations */,
 				B9EA33771BF7C266004D871F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +114,54 @@
 				B9EA33991BF7C342004D871F /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9EA33C11BF7C7B6004D871F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA33C31BF7C7B6004D871F /* Base */,
+				B9EA33D01BF7C7B6004D871F /* iOS */,
+			);
+			name = Configurations;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		B9EA33C31BF7C7B6004D871F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA33C41BF7C7B6004D871F /* Common.xcconfig */,
+				B9EA33C51BF7C7B6004D871F /* Configurations */,
+				B9EA33CA1BF7C7B6004D871F /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B9EA33C51BF7C7B6004D871F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA33C61BF7C7B6004D871F /* Debug.xcconfig */,
+				B9EA33C81BF7C7B6004D871F /* Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		B9EA33CA1BF7C7B6004D871F /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA33CB1BF7C7B6004D871F /* Application.xcconfig */,
+				B9EA33CC1BF7C7B6004D871F /* Framework.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		B9EA33D01BF7C7B6004D871F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B9EA33D11BF7C7B6004D871F /* iOS-Application.xcconfig */,
+				B9EA33D21BF7C7B6004D871F /* iOS-Base.xcconfig */,
+				B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +295,7 @@
 /* Begin XCBuildConfiguration section */
 		B9EA33881BF7C266004D871F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EA33C61BF7C7B6004D871F /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -286,6 +344,7 @@
 		};
 		B9EA33891BF7C266004D871F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EA33C81BF7C7B6004D871F /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -327,6 +386,7 @@
 		};
 		B9EA338B1BF7C266004D871F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -343,6 +403,7 @@
 		};
 		B9EA338C1BF7C266004D871F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -359,6 +420,7 @@
 		};
 		B9EA338E1BF7C266004D871F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EA33D11BF7C7B6004D871F /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(TARGET_NAME)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -369,6 +431,7 @@
 		};
 		B9EA338F1BF7C266004D871F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EA33D11BF7C7B6004D871F /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(TARGET_NAME)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -396,6 +459,7 @@
 				B9EA338C1BF7C266004D871F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EA338D1BF7C266004D871F /* Build configuration list for PBXNativeTarget "ConvenienceKitTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +468,7 @@
 				B9EA338F1BF7C266004D871F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
