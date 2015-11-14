@@ -11,6 +11,7 @@
 		B9EA33961BF7C326004D871F /* ConvenienceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EA33941BF7C326004D871F /* ConvenienceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9EA33EE1BF7CE04004D871F /* UIColor+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA33EC1BF7CE04004D871F /* UIColor+Name.swift */; };
 		B9EA33F11BF7CE3E004D871F /* UIColor+Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA33F01BF7CE3E004D871F /* UIColor+Hexadecimal.swift */; };
+		B9EA33F31BF7CF68004D871F /* UIImage+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA33F21BF7CF68004D871F /* UIImage+Asset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		B9EA33D31BF7C7B6004D871F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		B9EA33EC1BF7CE04004D871F /* UIColor+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Name.swift"; sourceTree = "<group>"; };
 		B9EA33F01BF7CE3E004D871F /* UIColor+Hexadecimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hexadecimal.swift"; sourceTree = "<group>"; };
+		B9EA33F21BF7CF68004D871F /* UIImage+Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Asset.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				B9EA33F01BF7CE3E004D871F /* UIColor+Hexadecimal.swift */,
 				B9EA33EC1BF7CE04004D871F /* UIColor+Name.swift */,
+				B9EA33F21BF7CF68004D871F /* UIImage+Asset.swift */,
 				B9EA33941BF7C326004D871F /* ConvenienceKit.h */,
 			);
 			path = Source;
@@ -280,6 +283,7 @@
 			files = (
 				B9EA33F11BF7CE3E004D871F /* UIColor+Hexadecimal.swift in Sources */,
 				B9EA33EE1BF7CE04004D871F /* UIColor+Name.swift in Sources */,
+				B9EA33F31BF7CF68004D871F /* UIImage+Asset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
